@@ -34,13 +34,13 @@ verbose("True")
 x = var("x", n) # cria n váriaveis (x0, x1, ..., xn-1)
 
 # função objetivo
-minimize(sum(C[i] * x[i] for i in range (n)))
+minimize(sum(C[i] * x[i] for i in range(n)))
 
 # retrições
 for j in range(m):
   if j < M:
     sum(Q[j][i] * x[i] for i in range(n)) >= N[j]
-  if j >= M:
+  elif j >= M:
     sum(Q[j][i] * x[i] for i in range(n)) <= N[j]
 
 sum(x[i] for i in range(n)) == 1
