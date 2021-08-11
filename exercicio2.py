@@ -26,6 +26,7 @@ Q = [[0.26, 0.01, 0.25, 0.10],
 
 n = len(C) # quantidade de ingredientes
 m = len(N) # necessidades de nutrientes
+M = 2 # quantidade de requisitos mínimos(o restante é de máximo)
 
 begin("barra de cereal") # inicia um modelo
 verbose("True")
@@ -37,9 +38,9 @@ minimize(sum(C[i] * x[i] for i in range (n)))
 
 # retrições
 for j in range(m):
-  if j < 2:
+  if j < M:
     sum(Q[j][i] * x[i] for i in range(n)) >= N[j]
-  if j >= 2:
+  if j >= M:
     sum(Q[j][i] * x[i] for i in range(n)) <= N[j]
 
 sum(x[i] for i in range(n)) == 1
