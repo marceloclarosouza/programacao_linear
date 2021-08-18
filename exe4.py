@@ -1,7 +1,19 @@
 ''' 
+Duas fazendas (F1, F2) produtoras de carne costumam
+utilizar três centros de processamento (P1, P2, P3)
+como intermediários para atender seus principais
+clientes (C1, C2, C3). Nas tabelas a seguir, são
+apresentados os custos de transporte por tonelada de
+carne entre as fazendas, os centros de processamento e
+os clientes.
 
-
-
+As fazendas F1 e F2 podem produzir no máximo 80
+e 90 toneladas, respectivamente. A demanda de C1
+é 50 toneladas, de C2 é 40 toneladas e C3 é 65
+toneladas. Elabore um modelo de programação linear
+para determinar o quanto cada fazenda deve produzir
+e como deve ser feita a distribuição de carne de forma
+que minimize o custo do transporte.
 '''
 
 # Exercício 4
