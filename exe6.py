@@ -1,4 +1,15 @@
 # Exercício 6
+"""
+Uma empresa possui 6 operadores que precisam
+processar um conjunto de tarefas com tempos distintos
+de execução. Cada tarefa pode ser realizada por
+qualquer operador. Uma vez iniciada, a tarefa é
+executada totalmente pelo operador. Determine uma
+alocação de tarefas que minimize o makespan do
+processo. Os tempos de execução das tarefas estão
+presentes no arquivo tempos.txt no diretório Listas de
+exercı́cios no Teams.
+"""
 from pymprog import*
 
 # Dados de entrada
